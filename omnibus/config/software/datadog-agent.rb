@@ -78,6 +78,7 @@ build do
     conf_dir = "#{install_dir}/etc/datadog-agent"
   end
   mkdir conf_dir
+  mkdir "#{conf_dir}/runtime-security.d"
   mkdir "#{install_dir}/bin"
   unless windows?
     mkdir "#{install_dir}/run/"
